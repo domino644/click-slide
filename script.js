@@ -320,7 +320,7 @@ function losuj(n) {
         klikanie_comp(tab1[wylosowana][0], tab1[wylosowana][1]);
 
         setTimeout(function () {
-            losuj(0);
+            losuj(n - 1);
         }, 50);
     } else {
         // zakończ losowanie
