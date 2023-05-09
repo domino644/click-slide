@@ -1,0 +1,60 @@
+* {
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img_cont {
+    display: block;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+}
+#zdjecie {
+    width: 720px;
+    height: 180px;
+}
+#ukladanka {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px red;
+}
+.buttonimg_cont {
+    display: flex;
+}
+.time_cont {
+    display: flex;
+}
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.time-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+.scoreboard,
+.scoreboard > * {
+    color: yellow;
+}
+.list-cont {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 100px;
+}

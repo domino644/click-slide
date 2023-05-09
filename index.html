@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Click n Slide</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body onload="displayTimes()">
+        <div class="buttonimg_cont">
+            <button onclick="lewo()" id="lewo">
+                <pre><--</pre>
+            </button>
+            <div class="img_cont">
+                <img
+                    id="zdjecie"
+                    src="./floppas/long_floppas.png"
+                    alt="cos sie popsulo"
+                />
+            </div>
+            <button onclick="prawo()" id="prawo">
+                <pre>--></pre>
+            </button>
+        </div>
+        <div class="button-container">
+            <button class="przyciski" id="3x3" onclick="trzy()">3 x 3</button>
+            <button class="przyciski" id="4x4" onclick="cztery()">4 x 4</button>
+            <button class="przyciski" id="5x5" onclick="piec()">5 x 5</button>
+            <button class="przyciski" id="6x6" onclick="szesc()">6 x 6</button>
+        </div>
+        <div class="time_cont">
+            <img id="h1" src="./cyferki/c0.gif" alt="cos sie popsulo" />
+            <img id="h2" src="./cyferki/c0.gif" alt="cos sie popsulo" />
+            <img src="./cyferki/colon.gif" alt="cos sie popsulo" />
+            <img id="m1" src="./cyferki/c0.gif" alt="cos sie popsulo" />
+            <img id="m2" src="./cyferki/c0.gif" alt="cos sie popsulo" />
+            <img src="./cyferki/colon.gif" alt="cos sie popsulo" />
+            <img id="s1" src="./cyferki/c0.gif" alt="cos sie popsulo" />
+            <img id="s2" src="./cyferki/c0.gif" alt="cos sie popsulo" />
+            <img src="./cyferki/dot.gif" alt="cos sie popsulo" />
+            <img id="ms1" src="./cyferki/c0.gif" alt="cos sie popsulo" />
+            <img id="ms2" src="./cyferki/c0.gif" alt="cos sie popsulo" />
+            <img id="ms3" src="./cyferki/c0.gif" alt="cos sie popsulo" />
+        </div>
+        <div id="ukladanka"></div>
+        <div class="scoreboard">
+            <p>Top times</p>
+            <div class="list-cont">
+                <span>
+                    <p>3x3</p>
+                    <ol id="3x3b" class="time-list"></ol>
+                </span>
+                <span>
+                    <p>4x4</p>
+                    <ol id="4x4b" class="time-list"></ol>
+                </span>
+                <span>
+                    <p>5x5</p>
+                    <ol id="5x5b" class="time-list"></ol>
+                </span>
+                <span>
+                    <p>6x6</p>
+                    <ol id="6x6b" class="time-list"></ol>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
